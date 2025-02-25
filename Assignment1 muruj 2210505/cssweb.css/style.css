@@ -1,0 +1,175 @@
+/* Muruj Alshaikh 2210505 */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #013D5A;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+main {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+section {
+  background-color: #FCF3E3; 
+  color:#013D5A;
+  padding: 15px;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.footer-column {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center; 
+  margin-top: 5px; 
+}
+
+nav img {
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+}
+footer h6 {
+text-align: center;
+  margin-top: 10px; 
+}
+h1{
+  font-size: 40px;
+}
+ h2{
+  font-size: 30px;
+}
+p,ul{
+  font-size: 20px;
+}
+.card h5{
+  font-size: 22px;
+}
+.container {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+header, footer{
+  color:#013D5A;
+  background-color:#FCF3E3;
+  width: 100%;
+}
+
+.projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects .col-3 {
+  flex: 0 0 25%;
+  padding: 10px;
+}
+
+.card {
+  background-color:#013D5A;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color:#FCF3E3;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 15px;
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+
+  p, ul {
+    font-size: 18px;
+  }
+
+  .card h5 {
+    font-size: 20px;
+  }
+
+  .projects .col-3 {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p, ul {
+    font-size: 16px;
+  }
+
+  .card h5 {
+    font-size: 18px;
+  }
+
+  .projects .col-3 {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p, ul {
+    font-size: 14px;
+  }
+
+  .card h5 {
+    font-size: 16px;
+  }
+
+  .projects .col-3 {
+    flex: 0 0 100%;
+  }
+}
